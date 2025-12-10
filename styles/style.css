@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact {
+  display: flex;
+  padding: 0 100px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact > textarea {
+  flex: 2;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 2px solid #b9b9b9;
+  resize: none;
+  color: #606060;
+}
+
+.helper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.helper > input {
+  margin-bottom: 20px;
+  height: 59px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 2px solid #b9b9b9;
+  color: #606060;
+}
+
+.helper > button {
+  height: 59px;
+  background-color: rgba(89, 104, 244, 1);
+  color: rgba(251, 251, 255, 1);
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 50px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.circle {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #5968f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle i {
+  font-size: 30px;
+}
+
+.label {
+  font-size: 18px;
+  color: #333;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+  margin: 63px 51px;
+}
+
+.photos img {
+  width: 373px;
+  height: 373px;
+  object-fit: cover;
+}
+
+.menu {
+    width: 100%;
+    height: 372px;
+    background-color: #2d2d2d;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 719px) {
+  .icons {
+    flex-direction: column;
+  }
+}
